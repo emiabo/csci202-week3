@@ -2,14 +2,28 @@
 <html>
     <head>
         <title>Interactive recreation of Counter composition XIII (1929) by Theo van Doesburg</title>
-        <link rel="stylesheet" href="style.css">
-        
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dynamic-style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <!--Place divs here and use CSS to shape them into the painting, then use hover states and JQuery-->
-
+        <p>Have another way to arrange the shapes? Go ahead!</p>
+        <div class="container">
+            <div class="tri" id="A"></div>
+            <div class="tri" id="B"></div>
+            <div class="tri" id="C"></div>
+            <div class="tri" id="D"></div>
+            <div class="tri" id="E"></div>
+            <div class="tri" id="F"></div>
+            <div class="tri" id="G"></div>
+            <div class="tri" id="H"></div>
+        </div>
 
         <a href="index.html">Static Version</a>
+        <p id="showbutton">Original Painting</p>
+        <img id="original" src="img/originalPainting.jpg" alt="Theo van Doesburg, Counter composition XIII, 1929. A painting made of triangles.">
     </body>
 </html>

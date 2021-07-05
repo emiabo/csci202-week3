@@ -1,0 +1,59 @@
+/*IDEAS:
+Make hover animation smoother, less keyframe-y
+Stopwatch for solving the puzzle
+*/
+
+p {
+    text-align: center;
+}
+
+a:hover {
+    transition: 1s;
+    transform: scale(1.1); /*does weird stuff when dragging, but it's neat so I'll leave it*/
+}
+
+@keyframes funky {
+    0% {}
+    25% {transform: rotate(5deg) scale(1.05);}
+    50% {transform: scale(1.1);}
+    75% {transform: rotate(-5deg) scale(1.05);}
+    100% {}
+}
+
+.tri:hover {
+    animation-name: funky;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.tri:active {
+    animation: none;
+    z-index: 2;
+}
+
+#showbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    /*Does having any CSS grid on the page just force everything to work like that?*/
+    position: absolute;
+    top: 450px;
+    left: 42%;
+}
+
+#showbutton:hover {
+    color: rgb(255, 232, 190);
+}
+
+#original {
+    width: 200px;
+    position: absolute;
+    top: 550px;
+    left: 42%;
+    display: none;
+}
