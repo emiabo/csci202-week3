@@ -95,3 +95,10 @@ a {
     top: 400px;
     left: 42%;
 }
+
+#bonuslink {
+    position: absolute;
+    top: 450px;
+    left: 35%;
+    font-size: small;
+}
