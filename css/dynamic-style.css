@@ -24,7 +24,7 @@ a:hover {
     animation-name: funky;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
 }
 
 .tri:active {
